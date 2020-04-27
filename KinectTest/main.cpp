@@ -96,7 +96,8 @@ void check_skel_data(){
 	else {
 		//assume that head is tracked so we get the data
 		Vector4 head_pos = skeletonData.SkeletonPositions[NUI_SKELETON_POSITION_HEAD];
-		printf("Skeleton found! head position at (x: %f , y: %f ,z: %f) \n", head_pos.x, head_pos.y,head_pos.z);
+		Vector4 left_hand_pos = skeletonData.SkeletonPositions[NUI_SKELETON_POSITION_HAND_LEFT];
+		printf("H(x: %f , y: %f ,z: %f) | LH( x: %f , y: %f , z: %f )\n", head_pos.x, head_pos.y,head_pos.z,left_hand_pos.x ,left_hand_pos.y,left_hand_pos.z);
 	}
 
 	
